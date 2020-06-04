@@ -1,0 +1,160 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.wrapper {
+    max-width: 85%; 
+    padding-right: 20PX;
+    padding-left: 50px;
+    margin: 0 auto;  
+  }
+.list-group-item:active{
+    background-color: #888;
+}
+
+.list-group-item{
+    background-color: #222;
+    border: none;
+    font-size: medium;
+    
+}
+
+.list-group{
+    max-width: 30%;
+    /* margin-top: 20px; */
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #222;
+    border: 2px solid white;
+    text-align: center;
+
+}
+
+.list-group span{
+margin-left: 50px;
+}
+
+
+
+.btn.btn-outline-warning{
+    width: 150px;
+}
+
+.header{
+    margin-top: 25px;
+}
+
+
+
+.profile-pic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.btn.new-playlist{
+font-size: 20px;}
+
+.btn.new-playlist::before{
+    content: "+" ;
+    height: 15px;
+
+}
+
+
+
+.card.mb-3{
+    display: inline-block;
+    margin-top: 20px;
+    max-width: 65%;
+    max-height: 50%;
+}
+
+.playlist-info{
+    background-color: #222;
+    max-width: 50%;
+    margin-left: 10%;
+    display: inline-block;
+    margin-top: 175px;
+
+    /* margin-top: 20px; */
+}
+
+.text-muted-1 {
+    vertical-align: top;
+    margin: 0px 0px 15px 75px;
+    font-size: 25px;
+    color: #fff;
+}    
+
+.text-muted-1.p{
+    font-size: 13px;
+    color: #fff;
+}
+
+.image{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.playlist{
+    display: inline-block;
+    max-width: 60%;
+}
+.playlist-image{
+    vertical-align: top;
+    height: 225px;
+    width: 225px;
+    margin: 0, 15px;
+}
+
+.top-content{
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.profile-icon{
+    display: inline-block;
+}
+
+.profile-button{
+    display: inline;
+    float: right;
+}
+
+.badge{
+    margin-bottom: 15px;
+}
+
+.list-group ul{
+list-style: none;
+display: inline-block;
+}
+.btn.btn-danger{
+    margin-left: 600px;
+    margin-bottom: 100px;
+    width: 250px;
+}
+
+.alert{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.logout-button{
+    display: inline;
+    float: right;
+}
+
+.player{
+display: block;
+margin-left: 50px;
+margin-top: 50px;
+max-width: 100%;
+max-width: 100%;
+}
+
+.playlist{
+    display: inline-block;
+}

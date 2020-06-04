@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results For "{{track_searched}}" </title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/background.css' %}">
+</head>
+<body>
+    <div class="text-center p-4 text-white">
+        <h3 class="font-weight-bold">Track Results For "{{track_searched}}"</h3>
+        <span class="text-sm">Top {{ track_info_length }} Results</span> |
+        <a href="/" class="text-white">Go Home</a>
+    </div>
+    <table class="table table-striped text-center font-weight-bold text-white">
+        <thead class="h4">
+            <tr>
+                <th>Cover Art</th>
+                <th>Artist</th>
+                <th>Track Name</th>
+                <th>Play Song</th>
+                <th>Add to Playlist</th>
+            </tr>
+        </thead>
+        {% for track in track_info_list %}
+        <tr>
+            <td class="align-middle"><img src="{{ track.image }}" width="80" height="80" alt=""></td>
+            <td class="align-middle">{{ track.artist }}</td>
+            {% if track.explicit == True %}
+            <td class="align-middle">{{ track.track }} (Explicit)</td>
+            {% elif track.explicit == False %}
+            <td class="align-middle">{{ track.track }}</td>
+            {% endif %}
+            <td class="align-middle">
+                <iframe src="https://open.spotify.com/embed/track/{{ track.track_id }}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </td>
+            <td class="align-middle">
+                <a href="/add_song_to_playlist/{{track.track_id}}" class="btn text-white" role="button">
+                    <i class="fas fa-heart"></i>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

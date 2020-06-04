@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+  <title>One Space</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/background.css' %}">
+
+</head>
+<body>
+    <div class="container mx-auto w-50 p-5">
+        <form action="/new_song_in_playlist" method="post">
+            {% csrf_token %}
+            <h3 class="text-white">Add Song To Playlist</h3>
+            <iframe src="https://open.spotify.com/embed/track/{{ track_id }}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <input type="hidden" name="track_id" value="{{ track_id }}">
+            <select name="playlist_id" class="form-control w-50 mb-3" id="">
+                {% for playlist in playlists_list %}
+                <option value="{{playlist.playlist_id}}">{{playlist.name}}</option>
+                {% endfor %}
+            </select>
+            <button type="submit" class="btn btn-primary">Add To Playlist</button>
+        </form>
+    </div>
+</body>
+</html>

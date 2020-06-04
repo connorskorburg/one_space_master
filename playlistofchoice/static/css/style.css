@@ -1,0 +1,250 @@
+html {
+  /* background: radial-gradient(#1B2735 0%, #090A0F auto); */
+}
+
+body{
+ background-color: #222;
+}
+
+.navbar{
+ padding-left: 5rem;
+ padding-right: 4rem;
+}
+
+.bar{
+  margin-left: 80rem;
+}
+
+/***************************************************         NavBar Styling      *************************************************** */
+
+
+.navbar-nav .logo-nav {
+  position: fixed;
+}
+.navbar-header.col {
+  margin-left: 10px;
+  padding: 0 !important;
+}
+.navbar {
+  /* background-color: black; */
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 0;
+}
+.nav-link img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: -8px 0;
+  float: left;
+  margin-right: 10px;
+}
+.navbar .navbar-brand, .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+  margin-top: 6px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.navbar .navbar-brand b {
+  font-weight: bold;
+  color: #33cabb;
+}
+.navbar .form-inline {
+  display: inline-block;
+  }
+.navbar .nav li {
+  position: relative;
+}
+.navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
+  color: #fff;
+  background: #33cabb;
+  vertical-align: middle;
+  border: none;
+  font-size: 14px;
+  margin-right: 40px;
+}
+.navbar .nav .btn-primary:hover, .navbar .nav .btn-primary:focus {
+  color: #fff;
+  outline: none;
+  background: #31bfb1;
+}
+.navbar .navbar-right li:first-child a {
+  padding-right: 30px;
+}
+.navbar .nav-item i {
+  font-size: 18px;
+}
+.navbar .nav .get-started-btn {
+  min-width: 55px;
+  background-color: #17a2b8;
+}
+.navbar ul.nav li.open > a.get-started-btn {
+  color: #fff;
+  background: #31bfb1 !important;
+}
+.navbar .dropdown-menu.form-wrapper {
+  width: 280px;
+  padding: 20px;
+  left: auto;
+  right: 0;
+  font-size: 14px;
+}
+.navbar .dropdown-menu.form-wrapper a {
+  color: #33cabb;
+  padding: 0 !important;
+}
+.navbar .dropdown-menu.form-wrapper a:hover{
+  text-decoration: underline;
+}
+.navbar .checkbox-inline {
+  font-size: 13px;
+}
+.navbar .navbar-right .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link{
+  padding-right: 3.5rem;
+  padding-left: 1.5rem;
+}
+.navbar-brand{
+  padding-right: 5.5rem;
+}
+
+/***************************************************           Container Row Section Styling      *************************************************** */
+
+.container {
+  margin-top: 50px;
+  min-height: 40px;
+  max-width: 100%;
+}
+.container .row{
+  width: auto;
+}
+.container .row .search .form-control {
+  width: 350px;
+  margin-left: 400px;
+  display: inline-block;
+}
+
+.btn-info{
+  margin-left: 60px;
+  margin-top: 3px;
+  height: 37px;
+  color: #fff;
+}
+
+.spot{
+  margin-top: 8px;
+  padding-right: 35px;
+  text-decoration: none;
+  /* color: black; */
+}
+
+.btn-primary {
+  margin-left: 20px;
+}
+
+.navbar .nav .btn-primary {
+  width: 5rem;
+}
+
+
+.categories{
+  margin-left: 60px;
+  width: 120px;
+  color: #fff;
+
+}
+
+
+
+
+
+/***************************************************                             Swiper Styling      *************************************************** */
+
+.swiper-container {
+  vertical-align: top;
+  position: relative;
+  max-width: 100%;
+  height: 600px;
+}
+.swiper-slide {
+  vertical-align: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+  left: 50px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+  right:
+}
+
+
+
+
+
+
+
+/***************************************************                             Swiper Footer Styling      *************************************************** */
+
+
+
+.footer {
+  position:relative;
+  left: 0;
+  height: 120px;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+
+.footer .swiper-1 {
+  margin-top: 80px;
+  position: relative;
+  height: 120px;
+}
+
+.footer .swiper-1 img{
+  width: 180px;
+  height: 120px;
+}
+
+.footer .swiper-1 .swiper-slide {
+  display: flex;
+  justify-content: left;
+
+}
+/***************************************************END*************************************************** */
+
+
+
+
+.content {
+  margin-top: 100px;
+  position: relative;
+  display: inline-block;
+  margin-left: 120px;
+  width: 1600px;
+}
+
+.img-responsive{
+  position: relative;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.caption{
+  color: white;
+  position: fixed;
+
+  width: 10%;
+  text-align: left;
+  margin-left: 2%;
+
+}

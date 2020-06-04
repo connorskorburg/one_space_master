@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Space</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/background.css' %}">
+</head>
+<body>
+    <h3 class="text-center text-white p-3">New Releases</h3>
+    <form action="/search_track" method="post" class="form-inline ml-5">
+        {% csrf_token %}
+        <input class="form-control ml-4 mb-3 mr-2" type="text" name="track" placeholder="Search For Track">
+        <button class="btn btn-secondary mb-3" type="submit">Search</button>
+    </form>
+    <div class="img-div text-center">
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.0.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.1.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.2.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.3.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.4.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.5.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.6.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.7.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.8.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.9.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.10.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.11.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.12.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.13.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.14.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.15.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.16.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.17.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.18.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/{{ new_releases_list.19.album_id }}" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+    </div>
+</body>
+</html>
