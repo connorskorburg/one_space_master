@@ -116,28 +116,11 @@
   </div>
 
   <div class="footer">
-    <div class="swiper-container swiper-1">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="/static/img/image4.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image5.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image3.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image2.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image1.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image4.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image5.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image3.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image2.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image1.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image4.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image5.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image3.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image2.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image1.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image4.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image5.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image3.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image2.jpg" alt="Myimage"></div>
-          <div class="swiper-slide"><img src="/static/img/image1.jpg" alt="Myimage"></div>
+    <div class="swiper-container swiper-1 pb-5">
+      <div class="swiper-wrapper ">
+        {% for new in new_releases_list %}
+        <div class="swiper-slide"><img src="{{new.image_url}}" alt=""></div>
+        {% endfor %}
       </div>
     </div>
   </div>
