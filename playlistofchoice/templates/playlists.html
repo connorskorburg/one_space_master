@@ -22,14 +22,23 @@
 
 
         <div class="header"> 
-            <a href="/"><button type="button" class="btn  h3 font-weight-bold">Home</button></a>
+            <a href="/"><button type="button" class="btn btn-lg font-weight-bold">Home</button></a>
             <img src="{% static "img/player.png" %}" width="55" height="55" alt="">
+            <form action="/search_track" method="post" class="form-inline">
+                {% csrf_token %}
+                <input class="form-control mt-3 mr-2" type="text" name="track" placeholder="Search For Track">
+                <button class="btn btn-secondary mt-3" type="submit">Search</button>
+            </form>
         </div> 
         
 <!-- My Playists -->
+{% if playlists_list|length == 0 %}
+<h3 class="mt-4 my_playlists">My Playlists</h3>
+
+{% elif playlists_list|length != 0 %}
   <div class="top-content">
-        <div class="list-group">    
-            <h3 class="my_playlists"  >My Playlists</h3>
+        <div class="list-group p-3">    
+            <h3 class="my_playlists">My Playlists</h3>
             {% for playlist in playlists_list %}    
 
             <ul>
@@ -39,12 +48,14 @@
             </ul>
 
             {% endfor %}
+            {% endif %}
 
             
         <div class="new-playlist">
             <a href="new_playlist"><button type="button" class="btn new-playlist">New Playlist</button></a>
         </div>
         </div>
+        
         <div class="playlist">
             {% for playlist in playlists_list %}
     
